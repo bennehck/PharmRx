@@ -1,0 +1,13 @@
+{
+  "name": "pharmrx",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Dispensing prescription generator, automatic marking and linked OSCE stations for MPharm teaching - one self-contained HTML file.",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "build:osce-data": "python3 scripts/build_osce_data.py",
+    "test": "node tests/engine.test.js && node tests/osce.test.js",
+    "test:browser": "node tests/browser.dispensing.js && node tests/browser.osce.js"
+  },
+  "devDependencies": { "playwright": "^1.56.0" }
+}
